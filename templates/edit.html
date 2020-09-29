@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('  {{ url_for('static', filename='img/home-bg.jpg      ') }}   ')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Admin panel</h1>
+            <span class="subheading">manage your posts and change them</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+         <h1> Basic action</h1>
+
+         <a href="/dashboard"> <button class="btn btn-primary">dshboard home</button></a>
+         <a href="/logout"> <button class="btn btn-primary">logout</button></a>
+         <hr>
+
+         
+          
+       
+
+        <h1>Add/Edit posts</h1>
+   
+      <form name="sentMessage" id="contactForm" action="/edit/{{sno}}" method="post" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>title</label>
+              <input type="text" class="form-control" placeholder="title" id="title" name='title' value='{{post.title}}' required data-validation-required-message="Please enter your name.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>tag_line</label>
+              <input type="text" class="form-control" placeholder="tad_line" id="tline" name='tline' value='{{post.tag_line}}'required data-validation-required-message="Please enter your email address.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>slug</label>
+              <input type="text" class="form-control" placeholder="slug" id="sluge" value='{{post.slug}}'name='slug'required data-validation-required-message="Please enter your phone number.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>content</label>
+              <textarea rows="5" class="form-control" placeholder="content" id="content"   name='content' required data-validation-required-message="Please enter a message.">{{post.content}}</textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>img_file</label>
+              <input rows="5" class="form-control" placeholder="img_file" id="img_file" value='{{post.img_file}}'  name='img_file'> 
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+
+
+
+
+
+          <br>
+          <div id="success"></div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">sumbit</button>
+          </div>
+        </form>  
+
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}

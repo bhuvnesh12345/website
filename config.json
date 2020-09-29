@@ -1,0 +1,27 @@
+{
+  "params":
+  {
+   "local_server": "True",
+    "local_uri": "mysql://root:@localhost/thunderstorm",
+    "prod_uri": "mysql://root:@localhost/thunderstorm",
+    "fb_url": "https://facebook.com/thunderstorm",
+    "tw_url": "https://twitter.com/thunderstorm",
+    "gh_url": "https://github.com/thunderstorm",
+    "blog_name": "Bhuvnesh",
+    "tagline": "My first blog!",
+    "gmail-user": "bhuvneshpsingh05062001@gmail.com ",
+    "gmail-password": "Bhuvnesh05062001",
+    "about_text": "my name is bhuvnesh pratap",
+    "no_of_posts": 3,
+    "login_image": "bhuvnesh.jpg",
+    "admin_user": "bhuvneshpsingh05062001",
+    "admin_password": "astha",
+    "upload_location": "C:\\Users\\manish computers\\PycharmProjects\\firstfrog"
+  }
+
+
+
+
+
+
+}
