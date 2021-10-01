@@ -10,12 +10,12 @@
     "blog_name": "Bhuvnesh",
     "tagline": "My first blog!",
     "gmail-user": "bhuvneshpsingh05062001@gmail.com ",
-    "gmail-password": "Bhuvnesh05062001",
+    "gmail-password": "Bhuvnesh05062001", // This should be hidden
     "about_text": "my name is bhuvnesh pratap",
     "no_of_posts": 3,
     "login_image": "bhuvnesh.jpg",
     "admin_user": "bhuvneshpsingh05062001",
-    "admin_password": "astha",
+    "admin_password": "astha",   // This should be hidden
     "upload_location": "C:\\Users\\manish computers\\PycharmProjects\\firstfrog"
   }
 
